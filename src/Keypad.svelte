@@ -5,7 +5,7 @@
 <table>
     <tr>
         <td>
-            <Button on:printNumber num={"AC"} exec={(a,b) => {a=0; b=0}}/>
+            <Button on:printNumber num={"AC"} />
         </td>
         <td>
             <Button on:printNumber num={"-"} />
@@ -64,7 +64,7 @@
             <Button on:printNumber num={0} span={2} />
         </td>
         <td colspan="1">
-            <Button on:printNumber num={"="} action={(s,v) => v} highlight={1}/>
+            <Button on:printNumber num={"="} action={(s,v) => v} highlighted={1}/>
         </td>
     </tr>
 </table>

@@ -6,7 +6,7 @@
     export let num;
     export let action;
     export let span;
-    export let highlight;
+    export let highlighted;
 
     function addNumber () {
         dispatch('printNumber', (action || num))
@@ -15,7 +15,7 @@
 
 
 
-<button class:span={span} class:action={typeof num != "number"} class:highlight={highlight} on:click={addNumber}>{num}</button>
+<button class:span={span} class:action={typeof num != "number"} class:highlighted={highlighted} on:click={addNumber}>{num}</button>
 
 
 
@@ -33,7 +33,7 @@
         background-color: #e5e7e8;
     }
 
-    button.highlight {
+    button.highlighted {
         background-color: #95f8a5;
     }
 </style>
